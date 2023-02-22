@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="assets/image/svg/Logo.svg" type="image/x-icon" />
+		<!-- CSS -->
+		<link rel="stylesheet" href="assets/css/pages/dashboard.css" />
+		<link rel="stylesheet" href="assets/css/pages/wallets.css" />
+		<link rel="stylesheet" href="assets/css/base/responsive.css" />
+		<!-- JS -->
+		<script src="assets/js/component/header.js" defer></script>
+		<title>Overview</title>
+	</head>
+	<body>
+		<header id="header" class="header">
+			<div class="container">
+				<div class="header-top">
+					<!-- Nav -->
+					<nav class="nav">
+						<a href="dashboard.html" class="app-logo">
+							<img src="assets/image/svg/Logo.svg" alt="Logo" class="app-logo__icon" />
+							<span class="app-logo__text">Finlab</span>
+						</a>
+						<ul class="nav__list">
+							<li class="nav__item">
+								<a href="dashboard.html" class="nav__link">Dashboard</a>
+							</li>
+							<li class="nav__item">
+								<a href="wallets.html" class="nav__link nav__link--active">Wallets</a>
+							</li>
+							<li class="nav__item"><a href="settings.html" class="nav__link">Settings</a></li>
+							<li class="nav__item"><a href="help.html" class="nav__link">Help & Center</a></li>
+						</ul>
+						<div class="hamburger">
+							<img src="assets/image/svg/menu.svg" alt="" />
+						</div>
+					</nav>
+					<!-- Mobile Menu -->
+					<nav class="mobile-menu">
+						<div class="modal__wrapper"></div>
+						<div class="mobile-menu__drawer">
+							<a href="dashboard.html" class="app-logo">
+								<img src="assets/image/svg/Logo.svg" alt="Logo" class="app-logo__icon" />
+								<span class="app-logo__text">Finlab</span>
+							</a>
+							<ul class="mobile-menu__list">
+								<li class="mobile-menu__item">
+									<a href="dashboard.html" class="mobile-menu__link">
+										Dashboard
+									</a>
+								</li>
+								<li class="mobile-menu__item">
+									<a href="wallets.html" class="mobile-menu__link mobile-menu__link--active">Wallets</a>
+								</li>
+								<li class="mobile-menu__item">
+									<a href="settings.html" class="mobile-menu__link">Settings</a>
+								</li>
+								<li class="mobile-menu__item">
+									<a href="help.html" class="mobile-menu__link">Help & Center</a>
+								</li>
+								<li class="mobile-menu__item">
+									<a href="#" class="mobile-menu__link mobile-menu__link-logout">Log Out</a>
+								</li>
+							</ul>
+						</div>
+						<div class="hamburger-menu">
+							<img src="assets/image/svg/close.svg" alt="" />
+						</div>
+					</nav>
+					<!-- Header Right -->
+					<div class="header-top__right">
+						<label class="header-top__label-search" for="search">
+							<img src="assets/image/svg/search-normal.svg" alt="" />
+							<input
+								type="text"
+								class="header-top__search"
+								id="search"
+								placeholder="Search anything here" />
+						</label>
+						<div class="header-top__notification">
+							<img src="assets/image/svg/notification.svg" alt="" />
+							<div class="header-notification">
+								<h1 class="header-notification__head-title">Notification</h1>
+								<div class="header-notification__list">
+									<div class="header-notification__item">
+										<div class="header-notification__left">
+											<img src="assets/image/svg/Adobe Collection.svg" alt="" />
+											<div class="header-notification__info">
+												<span class="header-notification__title">Transfer Success</span>
+												<p class="header-notification__subtitle">
+													You have successfully sent
+													<span class="header-notification__subtitle-bold">johnatan</span>
+													$10.00
+												</p>
+											</div>
+										</div>
+										<div class="header-notification__right">
+											<span class="header-notification__time">2m</span>
+											<span class="header-notification__not-seen"></span>
+										</div>
+									</div>
+								</div>
+								<button class="header-notification__btn">See more Notification</button>
+							</div>
+						</div>
+						<div class="header-top__profile">
+							<img src="assets/image/Ellipse 513.png" alt="" />
+						</div>
+					</div>
+				</div>
+				<div class="header-bottom">
+					<h1 class="header-bottom__title">Welcome back, Rainer Yaeger 👏🏻</h1>
+					<ul class="breadcrumb">
+						<li class="breadcrumb__item">
+							<a href="#" class="breadcrumb__link">Wallets</a>
+						</li>
+						>
+						<li class="breadcrumb__item">
+							<a href="#" class="breadcrumb__link breadcrumb__link--active">Overview</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+
+		<main class="main" id="main">
+			<div class="container">
+				<section class="cards section section--active" id="overview">
+					<div class="card-left">
+						<div class="balance card">
+							<div class="balance-head card-head">
+								<h2 class="card-title">Total Balance</h2>
+								<div class="card-head__right">
+									<img src="assets/image/svg/Container.svg" alt="" />
+									<div class="card-head__right-text">
+										**** 7189
+										<img src="assets/image/svg/arrow-down.svg" alt="" />
+									</div>
+								</div>
+							</div>
+							<div class="analytics-main__content-up">
+								<h1 class="balance-price card-price">$8,527,224</h1>
+								<span class="analytics-main__content-number">
+									<img src="assets/image/svg/arrow-up.svg" alt="" />
+									+3.1%
+								</span>
+							</div>
+							<div class="balance-footer">
+								<button class="balance-footer__transfer">
+									<img src="assets/image/svg/card-send.svg" alt="" />
+									Transfer
+								</button>
+								<button class="balance-footer__receive">
+									<img src="assets/image/svg/card-receive.svg" alt="" />
+									Receive
+								</button>
+							</div>
+						</div>
+
+						<div class="card-list card">
+							<h2 class="card-title">Card Lists</h2>
+							<div class="card-lists">
+								<div class="card-list__item visa-card">
+									<div class="card-list__item-head">
+										<h5 class="card-list__item-title">Visa Card</h5>
+										<img src="assets/image/svg/Vector.svg" class="card-list__item-icon" />
+									</div>
+									<h3 class="card-list__item-number">**** ***** **** 3456</h3>
+									<div class="card-list__item-bottom">
+										<div class="card-list__item-left">
+											<span class="card-list__item-bottom-name">Name</span>
+											<span class="card-list__item-name">Rainer Yaeger</span>
+										</div>
+										<div class="card-list__item-right">
+											<span class="card-list__item-date">11/23</span>
+										</div>
+									</div>
+								</div>
+
+								<div class="card-list__item master-card">
+									<div class="card-list__item-head">
+										<h5 class="card-list__item-title">Visa Card</h5>
+										<img src="assets/image/svg/Vector.svg" class="card-list__item-icon" />
+									</div>
+									<h3 class="card-list__item-number">**** ***** **** 3456</h3>
+									<div class="card-list__item-bottom">
+										<div class="card-list__item-left">
+											<span class="card-list__item-bottom-name">Name</span>
+											<span class="card-list__item-name">Mikasa Ackerman</span>
+										</div>
+										<div class="card-list__item-right">
+											<span class="card-list__item-date">11/23</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<button class="card-btn">Add new card</button>
+						</div>
+					</div>
+
+					<div class="card-right">
+						<div class="balance-analytics card">
+							<div class="balance-head card-head">
+								<h2 class="card-title">Balance Analytics</h2>
+								<div class="toggles">
+									<div class="toggle-wrapper">
+										<div class="toggle toggle--active">
+											<div class="toggle-circle"></div>
+										</div>
+										Income Statistics
+									</div>
+									<div class="toggle-wrapper">
+										<div class="toggle">
+											<div class="toggle-circle"></div>
+										</div>
+										Expense Statistics
+									</div>
+								</div>
+								<div class="card-head__right">
+									<div class="card-head__right-text">
+										Monthly
+										<img src="assets/image/svg/arrow-down.svg" alt="" />
+									</div>
+								</div>
+							</div>
+							<canvas id="balance-analytics"></canvas>
+						</div>
+
+						<div class="card-right-bottom">
+							<div class="quick-transfer card">
+								<h2 class="card-title">Quick Transfer</h2>
+								<div class="quick-transfer__list">
+									<div class="quick-transfer__item">
+										<img class="quick-transfer__item-profile" src="assets/image/1.png" alt="" />
+										<h5 class="quick-transfer__item-name">Bertold Brown</h5>
+										<span class="quick-transfer__item-username">@bertold</span>
+									</div>
+									<div class="quick-transfer__item">
+										<img class="quick-transfer__item-profile" src="assets/image/2.png" alt="" />
+										<h5 class="quick-transfer__item-name">Risa Reis</h5>
+										<span class="quick-transfer__item-username">@RReis</span>
+									</div>
+									<div class="quick-transfer__item">
+										<img class="quick-transfer__item-profile" src="assets/image/3.png" alt="" />
+										<h5 class="quick-transfer__item-name">Conny Lower</h5>
+										<span class="quick-transfer__item-username">@Conlow</span>
+									</div>
+									<div class="quick-transfer__item">
+										<img class="quick-transfer__item-profile" src="assets/image/4.png" alt="" />
+										<h5 class="quick-transfer__item-name">Levi Acker</h5>
+										<span class="quick-transfer__item-username">@Leviack</span>
+									</div>
+								</div>
+								<form class="ammount-form">
+									<div for="ammount" class="ammount-wrapper">
+										<label for="ammount">
+											<img src="assets/image/svg/dollar-circle.svg" alt="" />
+											<input type="text" id="ammount" placeholder="Ammount" />
+										</label>
+									</div>
+									<button class="ammount-btn">
+										Send
+										<img src="assets/image/svg/send-2.svg" alt="" />
+									</button>
+								</form>
+							</div>
+							<!-- Currency -->
+							<div class="currency card">
+								<div class="currency-head card-head">
+									<h2 class="card-title">Currency</h2>
+									<div class="currency-head__right card-head__right">
+										<span class="currency-head__right-count">1</span>
+										|
+										<span class="currency-head__right-to">
+											USD
+											<img src="assets/image/svg/arrow-down-black.svg" alt="" />
+										</span>
+									</div>
+								</div>
+
+								<div class="currency-main">
+									<div class="currency-item">
+										<div class="currency-left">
+											<img src="assets/image/svg/rupiah.svg" alt="" />
+											<h3 class="currency-name">Rupiah</h3>
+										</div>
+										<div class="currency-right">
+											<h3 class="currency-price">15425,15</h3>
+											<h3 class="currency-shortname">IDR</h3>
+										</div>
+									</div>
+
+									<div class="currency-item">
+										<div class="currency-left">
+											<img src="assets/image/svg/euro.svg" alt="" />
+											<h3 class="currency-name">Euro</h3>
+										</div>
+										<div class="currency-right">
+											<h3 class="currency-price">0,95</h3>
+											<h3 class="currency-shortname">EUR</h3>
+										</div>
+									</div>
+
+									<div class="currency-item">
+										<div class="currency-left">
+											<img src="assets/image/svg/euro.svg" alt="" />
+											<h3 class="currency-name">Euro</h3>
+										</div>
+										<div class="currency-right">
+											<h3 class="currency-price">0,95</h3>
+											<h3 class="currency-shortname">EUR</h3>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</main>
+		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+		<script src="assets/js/pages/wallets.js"></script>
+	</body>
+</html>

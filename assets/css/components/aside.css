@@ -1,0 +1,131 @@
+
+.card {
+	border-radius: 1.6rem;
+	background-color: var(--white);
+	box-shadow: 0 0.8rem 2.4rem rgb(55 56 56 / 15%);
+	padding: 2.4rem;
+}
+
+.btn {
+	border: none;
+	outline: none;
+	background-color: unset;
+	padding: 1.2rem 2.4rem;
+	border-radius: 1.4rem;
+	cursor: pointer;
+}
+
+.input {
+	outline: none;
+	border: none;
+}
+
+/* Aside */
+
+.section-inner {
+	transform: translateY(-12.6rem);
+	flex-direction: column;
+	display: flex;
+	gap: 2.4rem;
+}
+
+.sidebar {
+	position: sticky;
+	display: flex;
+	min-width: 41.7rem;
+	height: 33.6rem;
+	gap: 1.2rem;
+}
+
+.sidebar-tab {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2.4rem;
+	border-radius: 1.6rem;
+	transition: background-color 0.3s ease-in;
+	cursor: pointer;
+}
+
+.sidebar-tab:not(.sidebar-tab--active):hover {
+	background-color: rgba(49, 176, 153, 0.2);
+}
+
+.sidebar-tab--active {
+	background-color: var(--primary-color);
+}
+
+.sidebar-tab__left {
+	display: flex;
+	align-items: center;
+	gap: 1.6rem;
+}
+
+.sidebar-tab__icon {
+	background-color: #edf1f3;
+	padding: 1rem;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10rem;
+	transition: background 0.3s ease-in;
+}
+
+.sidebar-tab--active .sidebar-tab__icon {
+	background-color: var(--white);
+}
+
+.sidebar-tab__text {
+	font-size: 1.8rem;
+	font-family: "Manrope-Bold";
+	color: #1a1c1e;
+	transition: color 0.5s linear;
+}
+
+.sidebar-tab--active .sidebar-tab__text {
+	color: var(--white);
+}
+
+.sidebar-tab__right {
+	display: flex;
+	align-items: center;
+}
+
+.sideabar__label {
+	border: 0.1rem solid #DCE4E8;
+	border-radius: 1.6rem;
+	cursor: text;
+}
+
+.sidebar-popular {
+	display: flex;
+	flex-direction: column;
+	gap: 1.6rem;
+	margin-top:3.2rem;
+}
+
+.sidebar-popular__title {
+	color: #6C7278;
+	font-size: 1.4rem;
+	font-family: "Manrope-Bold";
+}
+
+.sidebar-popular__tags {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1.6rem;
+}
+
+.sidebar-popular__tag {
+	color: #1A1C1E;
+	font-family: "Manrope-SemiBold";
+	padding: 1.2rem 2.4rem;
+	border: 1px solid #DCE4E8;
+	border-radius: 1.6rem;
+	transition: background-color 0.5s linear;
+	cursor: pointer;
+}
+
+.sidebar-popular__tag:hover {
+	background-color: #dce4e87e;
+}

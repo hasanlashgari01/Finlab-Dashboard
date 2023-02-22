@@ -1,0 +1,35 @@
+@import "variables.css";
+@import "reset.css";
+@import "fonts.css";
+@import "grid.css";
+
+html {
+	font-size: 62.5%;
+	box-sizing: border-box;
+	user-select: none;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 1.6rem;
+	line-height: 1.6;
+	font-family: "Manrope-Regular";
+	background-color: #f4f4f7;
+}
+
+a {
+	text-decoration: none;
+	font-size: 1.6rem;
+	line-height: 1.6;
+}
+
+ul {
+	list-style: none;
+}

@@ -1,0 +1,233 @@
+.main {
+	transform: translateY(-13rem);
+}
+
+.card-left {
+	display: flex;
+	flex: 1;
+	max-width: 36.5rem;
+}
+
+.balance {
+	width: 100%;
+}
+
+.card-list__item {
+	padding: 1.6rem;
+	border-radius: 1.6rem;
+	height: 16rem;
+}
+
+.visa-card {
+	background: linear-gradient(164.81deg, #2aac95 19.8%, #76d1f7 95.93%);
+	color: #fff;
+	margin-top: 2.4rem;
+}
+
+.master-card {
+	background: linear-gradient(164.81deg, #2a6eac 19.8%, #76d1f7 95.93%);
+	color: #fff;
+	margin-top: 1.6rem;
+}
+
+.card-list__item-head {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.card-list__item-title {
+	font-size: 1.4rem;
+	font-family: "Manrope-SemiBold";
+	color: #dce4e8;
+}
+
+.card-list__item-number {
+	font-family: "Manrope-SemiBold";
+	margin-block: 2.1rem 0.9rem;
+}
+
+.card-list__item-bottom {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.card-list__item-bottom-name {
+	color: rgba(237, 241, 243, 0.6);
+}
+
+.card-list__item-left {
+	display: flex;
+	flex-direction: column;
+}
+
+.card-btn {
+	border: 0;
+	outline: 0;
+	padding-block: 1.2rem;
+	border-radius: 1.4rem;
+	font-family: "Manrope-SemiBold";
+	color: #1a1c1e;
+	background-color: #fff;
+	border: 1px solid #dce4e8;
+	margin-top: 2.4rem;
+	transition: background-color 0.5s linear;
+	cursor: pointer;
+}
+
+.card-btn:hover {
+	background-color: #dce4e8;
+}
+
+.analytics-main__content-number {
+	background-color: #d6fbe6;
+	color: #31b099;
+}
+
+.card-right {
+	flex: 1;
+}
+
+.balance-head {
+	flex-wrap: wrap;
+}
+
+.currency-head {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.card-right-bottom {
+	display: flex;
+	flex-wrap: 1;
+	gap: 2.4rem;
+}
+
+.quick-transfer {
+	width: 100%;
+}
+
+.toggles {
+	display: flex;
+	gap: 3.2rem;
+	flex-wrap: wrap;
+}
+
+.toggle-wrapper {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 2.1rem;
+}
+
+.toggle {
+	position: relative;
+	width: 4rem;
+	height: 2.4rem;
+	border: 0.2rem solid #acb5bb;
+	border-radius: 1.6rem;
+	padding: 0.4rem 0.4rem;
+	transition: border 0.5s linear;
+	cursor: pointer;
+}
+
+.toggle-circle {
+	position: absolute;
+	width: 1.6rem;
+	height: 1.6rem;
+	background-color: #acb5bb;
+	border-radius: 1.6rem;
+	left: 0.2rem;
+	top: 50%;
+	transform: translate(0, -50%);
+	transition: background-color 0.5s ease, left 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.toggle--active {
+	border-color: #34b67f;
+}
+
+.toggle--active .toggle-circle {
+	background-color: #34b67f;
+	left: calc(100% - 1.9rem);
+}
+
+.currency {
+	min-width: 35.1rem;
+}
+
+.quick-transfer__list {
+	display: flex;
+	padding-inline: 3.2rem;
+	margin-block: 4.4rem;
+	justify-content: space-between;
+	text-align: center;
+}
+
+.quick-transfer__item {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: center;
+}	
+
+.quick-transfer__item-name {
+	margin-top: 1.2rem;
+	color: #1a1c1e;
+	font-size: 1.6rem;
+	font-family: "Manrope-SemiBold";
+}
+
+.quick-transfer__item-username {
+	color: #acb5bb;
+	font-size: 1.4rem;
+	font-family: "Manrope-SemiBold";
+}
+
+.ammount-form {
+	display: flex;
+	gap: 1.7rem;
+}
+
+.ammount-wrapper {
+	display: flex;
+	align-items: center;
+	flex: 2;
+	border: 1px solid #dce4e8;
+	border-radius: 1.6rem;
+	padding: -1.9rem -2.4rem;
+}
+
+.ammount-wrapper label {
+	margin: 1.9rem 2.4rem;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	gap: 1.2rem;
+	cursor: text;
+}
+
+.ammount-form input {
+	outline: 0;
+	border: 0;
+}
+
+.ammount-btn {
+	outline: 0;
+	border: 0;
+	background-color: var(--primary-color);
+	color: var(--white);
+	padding: 1.2rem 3.55rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	column-gap: 1rem;
+	border-radius: 1.4rem;
+}
+
+.card-center-bottom {
+	display: none !important;
+}

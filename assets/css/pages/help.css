@@ -1,0 +1,68 @@
+@import "../base/base.css";
+@import "../components/header.css";
+@import "../components/aside.css";
+@import "../components/form.css";
+
+.sidebar {
+	max-width: 41.7rem;
+	height: fit-content;
+}
+
+.sidebar__title {
+	color: #1a1c1e;
+	font-size: 2.4rem;
+	font-family: "Manrope-SemiBold";
+}
+
+.sidebar__caption {
+	color: #6c7278;
+	font-family: "Manrope-SemiBold";
+	margin-block: 1.2rem 3.2rem;
+}
+
+.header-top__search {
+	color: black;
+}
+
+.main__title {
+	color: #1a1c1e;
+	margin: 0 0 3.2rem;
+}
+
+.question-box__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+	padding-block: 3.2rem;
+	border-top: 0.1rem solid #edf1f3;
+	border-bottom: 0.1rem solid #edf1f3;
+}
+
+.question-box {
+	padding: 2.4rem;
+	border: 1px solid #dce4e8;
+	border-radius: 1.6rem;
+}
+
+.question-box__title {
+	margin-bottom: 1.6rem;
+	color: #1a1c1e;
+}
+
+.question-box .sidebar-popular {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.question-like {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 0.8rem;
+}
+
+.question-like img {
+	cursor: pointer;
+}

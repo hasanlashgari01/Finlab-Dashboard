@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="assets/image/svg/Logo.svg" type="image/x-icon" />
+		<!-- CSS -->
+		<link rel="stylesheet" href="assets/css/pages/settings.css" />
+		<link rel="stylesheet" href="assets/css/base/responsive.css" />
+		<!-- JS -->
+		<script src="assets/js/component/header.js" defer></script>
+		<script src="assets/js/pages/settings.js" defer></script>
+		<script src="assets/js/script.js" defer></script>
+		<title>Overview</title>
+	</head>
+	<body>
+		<header id="header" class="header">
+			<div class="container">
+				<div class="header-top">
+					<!-- Nav -->
+					<nav class="nav">
+						<a href="dashboard.html" class="app-logo">
+							<img src="assets/image/svg/Logo.svg" alt="Logo" class="app-logo__icon" />
+							<span class="app-logo__text">Finlab</span>
+						</a>
+						<ul class="nav__list">
+							<li class="nav__item">
+								<a href="dashboard.html" class="nav__link">Dashboard</a>
+							</li>
+							<li class="nav__item">
+								<a href="wallets.html" class="nav__link">Wallets</a>
+							</li>
+							<li class="nav__item">
+								<a href="settings.html" class="nav__link nav__link--active">Settings</a>
+							</li>
+							<li class="nav__item"><a href="help.html" class="nav__link">Help & Center</a></li>
+						</ul>
+						<div class="hamburger">
+							<img src="assets/image/svg/menu.svg" alt="" />
+						</div>
+					</nav>
+					<!-- Mobile Menu -->
+					<nav class="mobile-menu">
+						<div class="mobile-menu__wrapper"></div>
+						<div class="mobile-menu__drawer">
+							<a href="dashboard.html" class="app-logo">
+								<img src="assets/image/svg/Logo.svg" alt="Logo" class="app-logo__icon" />
+								<span class="app-logo__text">Finlab</span>
+							</a>
+							<ul class="mobile-menu__list">
+								<li class="mobile-menu__item">
+									<a href="dashboard.html" class="mobile-menu__link">Dashboard</a>
+								</li>
+								<li class="mobile-menu__item">
+									<a href="wallets.html" class="mobile-menu__link">Wallets</a>
+								</li>
+								<li class="mobile-menu__item">
+									<a href="settings.html" class="mobile-menu__link mobile-menu__link--active">
+										Settings
+									</a>
+								</li>
+								<li class="mobile-menu__item">
+									<a href="help.html" class="mobile-menu__link">Help & Center</a>
+								</li>
+								<li class="mobile-menu__item">
+									<a href="#" class="mobile-menu__link mobile-menu__link-logout">Log Out</a>
+								</li>
+							</ul>
+						</div>
+						<div class="hamburger-menu">
+							<img src="assets/image/svg/close.svg" alt="" />
+						</div>
+					</nav>
+					<!-- Header Right -->
+					<div class="header-top__right">
+						<label class="header-top__label-search" for="search">
+							<img src="assets/image/svg/search-normal.svg" alt="" />
+							<input
+								type="text"
+								class="header-top__search"
+								id="search"
+								placeholder="Search anything here" />
+						</label>
+						<div class="header-top__notification">
+							<img src="assets/image/svg/notification.svg" alt="" />
+							<div class="header-notification">
+								<h1 class="header-notification__head-title">Notification</h1>
+								<div class="header-notification__list">
+									<div class="header-notification__item">
+										<div class="header-notification__left">
+											<img src="assets/image/svg/Adobe Collection.svg" alt="" />
+											<div class="header-notification__info">
+												<span class="header-notification__title">Transfer Success</span>
+												<p class="header-notification__subtitle">
+													You have successfully sent
+													<span class="header-notification__subtitle-bold">johnatan</span>
+													$10.00
+												</p>
+											</div>
+										</div>
+										<div class="header-notification__right">
+											<span class="header-notification__time">2m</span>
+											<span class="header-notification__not-seen"></span>
+										</div>
+									</div>
+								</div>
+								<button class="header-notification__btn">See more Notification</button>
+							</div>
+						</div>
+						<div class="header-top__profile">
+							<img src="assets/image/Ellipse 513.png" alt="" />
+						</div>
+					</div>
+				</div>
+				<div class="header-bottom">
+					<h1 class="header-bottom__title">Welcome back, Rainer Yaeger 👏🏻</h1>
+					<ul class="breadcrumb">
+						<li class="breadcrumb__item">
+							<a href="#" class="breadcrumb__link">Settings</a>
+						</li>
+						>
+						<li class="breadcrumb__item">
+							<a href="#" class="breadcrumb__link breadcrumb__link-second breadcrumb__link--active">
+								Personal Information
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+
+		<div class="section settings">
+			<div class="container">
+				<div class="section-inner">
+					<aside class="sidebar card">
+						<div class="sidebar-tab sidebar-tab--active" data-id="personal-information">
+							<div class="sidebar-tab__left">
+								<span class="sidebar-tab__icon">
+									<img src="assets/image/svg/user.svg" alt="" />
+								</span>
+								<span class="sidebar-tab__text">Personal Information</span>
+							</div>
+							<div class="sidebar-tab__right">
+								<img src="assets/image/svg/arrow-right-small.svg" alt="" />
+							</div>
+						</div>
+						<div class="sidebar-tab" data-id="preferences">
+							<div class="sidebar-tab__left">
+								<span class="sidebar-tab__icon">
+									<img src="assets/image/svg/devices.svg" alt="" />
+								</span>
+								<span class="sidebar-tab__text">Preferences</span>
+							</div>
+							<div class="sidebar-tab__right">
+								<img src="assets/image/svg/arrow-right-gray.svg" alt="" />
+							</div>
+						</div>
+						<div class="sidebar-tab" data-id="security">
+							<div class="sidebar-tab__left">
+								<span class="sidebar-tab__icon">
+									<img src="assets/image/svg/lock.svg" alt="" />
+								</span>
+								<span class="sidebar-tab__text">Security</span>
+							</div>
+							<div class="sidebar-tab__right">
+								<img src="assets/image/svg/arrow-right-gray.svg" alt="" />
+							</div>
+						</div>
+					</aside>
+
+					<section class="personal-information main card main--active" id="personal-information">
+						<h1 class="main__title">Personal Information</h1>
+						<form class="main-head">
+							<!-- Photo Profile -->
+							<div class="main-section">
+								<h4 class="main-section__title">Photo Profile</h4>
+								<div class="main-section__content">
+									<img src="assets/image/Ellipse 513.png" alt="" />
+									<div class="main-btn">
+										<button class="main-section__btn btn">Upload</button>
+										<button class="main-section__delete btn">
+											<span class="main-section__delete-text">Delete</span>
+											<img
+												class="main-section__delete-icon"
+												src="assets/image/svg/trash-delete.svg"
+												alt="" />
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="main-section">
+								<h4 class="main-section__title">Display name</h4>
+								<div class="main-section__content">
+									<label for="input">
+										<input class="input" id="input" type="text" placeholder="Name" />
+									</label>
+								</div>
+							</div>
+							<div class="main-section">
+								<h4 class="main-section__title">Email</h4>
+								<div class="main-section__content">
+									<label for="email">
+										<input class="input" id="email" type="email" placeholder="Email" />
+									</label>
+								</div>
+							</div>
+							<div class="main-section">
+								<h4 class="main-section__title">Date of Birth</h4>
+								<div class="main-section__content">
+									<label for="birth">
+										<input class="input" id="birth" type="date" />
+									</label>
+								</div>
+							</div>
+							<div class="main-section main-section__row">
+								<div class="main-section__content main-section__content-row">
+									<h4 class="main-section__title">Country</h4>
+									<label for="country">
+										<input class="input" id="country" type="text" placeholder="Indonesia" />
+									</label>
+								</div>
+								<div class="main-section__content main-section__content-row">
+									<h4 class="main-section__title">Province</h4>
+									<label for="province">
+										<input class="input" id="province" type="text" placeholder="Central Java" />
+									</label>
+								</div>
+								<div class="main-section__content main-section__content-row">
+									<h4 class="main-section__title">City</h4>
+									<label for="city">
+										<input class="input" id="city" type="text" placeholder="Semarang" />
+									</label>
+								</div>
+							</div>
+							<div class="main-section">
+								<div class="main-section__content">
+									<input class="main-section__content-cancel btn" type="submit" value="Cancel" />
+									<input class="main-section__content-yes btn" type="submit" value="Yes" />
+								</div>
+							</div>
+						</form>
+					</section>
+
+					<section class="preferences main card" id="preferences">
+						<h1 class="main__title">Preferences</h1>
+						<form class="main-head">
+							<div class="main-section">
+								<h4 class="main-section__title">Language</h4>
+								<div class="main-section__content">
+									<div class="dropdown">
+										<div class="dropdown__head">
+											<span class="dropdown__select">English ( Australia )</span>
+											<img src="assets/image/svg/arrow-down-black.svg" alt="" />
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="main-section">
+								<h4 class="main-section__title">Color themes</h4>
+								<div class="main-section__content">
+									<div class="dropdown">
+										<div class="dropdown__head">
+											<span class="dropdown__select">
+												<img src="assets/image/svg/themes.svg" alt="" />
+												Dark blue ( 1C2634 )
+											</span>
+											<img src="assets/image/svg/arrow-down-black.svg" alt="" />
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="main-section">
+								<h4 class="main-section__title">Notification</h4>
+								<div class="main-section__content">
+									<div class="main-section__toggle">
+										<div class="main-section__toggle-wrapper">
+											<div class="main-section__toggle-content">
+												<h3 class="main-section__toggle-title">Update Systems</h3>
+												<p class="main-section__toggle-caption">
+													let me know if there is a new product update
+												</p>
+											</div>
+											<div class="toggle">
+												<div class="toggle-circle"></div>
+											</div>
+										</div>
+
+										<div class="main-section__toggle-wrapper">
+											<div class="main-section__toggle-content">
+												<h3 class="main-section__toggle-title">Transactions</h3>
+												<p class="main-section__toggle-caption">
+													tell me about the information after making the transaction
+												</p>
+											</div>
+											<div class="toggle">
+												<div class="toggle-circle"></div>
+											</div>
+										</div>
+
+										<div class="main-section__toggle-wrapper">
+											<div class="main-section__toggle-content">
+												<h3 class="main-section__toggle-title">Email Notification</h3>
+												<p class="main-section__toggle-caption">
+													notify me of all notifications via email
+												</p>
+											</div>
+											<div class="toggle toggle--active">
+												<div class="toggle-circle"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="main-section">
+								<div class="main-section__content">
+									<input class="main-section__content-cancel btn" type="submit" value="Cancel" />
+									<input class="main-section__content-yes btn" type="submit" value="Yes" />
+								</div>
+							</div>
+						</form>
+					</section>
+
+					<section class="security main card" id="security">
+						<h1 class="security__title main__title">Security</h1>
+						<form class="main-head">
+							<div class="main-section">
+								<h4 class="main-section__title">Old Password</h4>
+								<div class="main-section__content">
+									<label for="password">
+										<input class="input" id="password" type="password" placeholder="Password" />
+									</label>
+								</div>
+							</div>
+
+							<div class="main-section">
+								<h4 class="main-section__title">New Password</h4>
+								<div class="main-section__content">
+									<label for="password">
+										<input class="input" id="password" type="password" placeholder="New Password" />
+									</label>
+								</div>
+							</div>
+
+							<div class="main-section main-head__last-input">
+								<h4 class="main-section__title">Repeat New Password</h4>
+								<div class="main-section__content">
+									<label for="password">
+										<input
+											class="input"
+											id="password"
+											type="password"
+											placeholder="Repeat New Password" />
+									</label>
+								</div>
+							</div>
+
+							<div class="main-section">
+								<div class="main-section__content">
+									<input class="main-section__content-cancel btn" type="submit" value="Cancel" />
+									<input class="main-section__content-yes btn" type="submit" value="Yes" />
+								</div>
+							</div>
+						</form>
+					</section>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

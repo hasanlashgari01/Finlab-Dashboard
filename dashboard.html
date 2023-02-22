@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="assets/image/svg/Logo.svg" type="image/x-icon" />
+		<!-- CSS -->
+		<link rel="stylesheet" href="assets/css/pages/dashboard.css" />
+		<link rel="stylesheet" href="assets/css/base/responsive.css" />
+		<!-- JS -->
+		<script src="assets/js/component/header.js" defer></script>
+		<script src="assets/js/pages/dashboard.js" defer></script>
+		<title>Overview</title>
+	</head>
+	<body>
+		<!-- Header -->
+		<header id="header" class="header">
+			<div class="container">
+				<div class="header-top">
+					<!-- Nav -->
+					<nav class="nav">
+						<a href="dashboard.html" class="app-logo">
+							<img src="assets/image/svg/Logo.svg" alt="Logo" class="app-logo__icon" />
+							<span class="app-logo__text">Finlab</span>
+						</a>
+						<ul class="nav__list">
+							<li class="nav__item">
+								<a href="dashboard.html" class="nav__link nav__link--active">Dashboard</a>
+							</li>
+							<li class="nav__item"><a href="wallets.html" class="nav__link">Wallets</a></li>
+							<li class="nav__item"><a href="settings.html" class="nav__link">Settings</a></li>
+							<li class="nav__item"><a href="help.html" class="nav__link">Help & Center</a></li>
+						</ul>
+						<div class="hamburger">
+							<img src="assets/image/svg/menu.svg" alt="" />
+						</div>
+					</nav>
+					<!-- Mobile Menu -->
+					<nav class="mobile-menu">
+						<div class="modal__wrapper"></div>
+						<div class="mobile-menu__drawer">
+							<a href="dashboard.html" class="app-logo">
+								<img src="assets/image/svg/Logo.svg" alt="Logo" class="app-logo__icon" />
+								<span class="app-logo__text">Finlab</span>
+							</a>
+							<ul class="mobile-menu__list">
+								<li class="mobile-menu__item">
+									<a href="dashboard.html" class="mobile-menu__link mobile-menu__link--active">
+										Dashboard
+									</a>
+								</li>
+								<li class="mobile-menu__item">
+									<a href="wallets.html" class="mobile-menu__link">Wallets</a>
+								</li>
+								<li class="mobile-menu__item">
+									<a href="settings.html" class="mobile-menu__link">Settings</a>
+								</li>
+								<li class="mobile-menu__item">
+									<a href="help.html" class="mobile-menu__link">Help & Center</a>
+								</li>
+								<li class="mobile-menu__item">
+									<a href="#" class="mobile-menu__link mobile-menu__link-logout">Log Out</a>
+								</li>
+							</ul>
+						</div>
+						<div class="hamburger-menu">
+							<img src="assets/image/svg/close.svg" alt="" />
+						</div>
+					</nav>
+					<!-- Header Right -->
+					<div class="header-top__right">
+						<label class="header-top__label-search" for="search">
+							<img src="assets/image/svg/search-normal.svg" alt="" />
+							<input
+								type="text"
+								class="header-top__search"
+								id="search"
+								placeholder="Search anything here" />
+						</label>
+						<div class="header-top__notification">
+							<img src="assets/image/svg/notification.svg" alt="" />
+							<div class="header-notification">
+								<h1 class="header-notification__head-title">Notification</h1>
+								<div class="header-notification__list">
+									<div class="header-notification__item">
+										<div class="header-notification__left">
+											<img src="assets/image/svg/Adobe Collection.svg" alt="" />
+											<div class="header-notification__info">
+												<span class="header-notification__title">Transfer Success</span>
+												<p class="header-notification__subtitle">
+													You have successfully sent
+													<span class="header-notification__subtitle-bold">johnatan</span>
+													$10.00
+												</p>
+											</div>
+										</div>
+										<div class="header-notification__right">
+											<span class="header-notification__time">2m</span>
+											<span class="header-notification__not-seen"></span>
+										</div>
+									</div>
+								</div>
+								<button class="header-notification__btn">See more Notification</button>
+							</div>
+						</div>
+						<div class="header-top__profile">
+							<img src="assets/image/Ellipse 513.png" alt="" />
+						</div>
+					</div>
+				</div>
+				<div class="header-bottom">
+					<h1 class="header-bottom__title">Welcome back, Rainer Yaeger 👏🏻</h1>
+					<ul class="breadcrumb">
+						<li class="breadcrumb__item">
+							<a href="#" class="breadcrumb__link">Dashboard</a>
+						</li>
+						>
+						<li class="breadcrumb__item">
+							<a href="#" class="breadcrumb__link breadcrumb__link-second breadcrumb__link--active">
+								Overview
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<!-- Main -->
+		<main id="main" class="main">
+			<div class="container">
+				<div class="header-bottom__horizontal">
+					<ul class="header-bottom__tab">
+						<div class="animation"></div>
+						<li class="tab__item tab__item--active" data-id="overview">Overview</li>
+						<li class="tab__item" data-id="transaction">Transaction</li>
+						<li class="tab__item" data-id="statistics">Statistics</li>
+					</ul>
+					<div class="header-calendar">
+						<img src="assets/image/svg/calendar.svg" alt="" />
+						<span class="header-calendar__text">Oct 22,2022</span>
+					</div>
+				</div>
+				<!-- Overview -->
+				<section class="cards section section--active" id="overview">
+					<!-- Left -->
+					<div class="card-left">
+						<!-- Balance -->
+						<div class="balance card">
+							<div class="balance-head card-head">
+								<h2 class="card-title">Total Balance</h2>
+								<div class="card-head__right">
+									<img src="assets/image/svg/Container.svg" alt="" />
+									<div class="card-head__right-text">
+										**** 7189
+										<img src="assets/image/svg/arrow-down.svg" alt="" />
+									</div>
+								</div>
+							</div>
+							<h1 class="balance-price card-price">$112,456,315</h1>
+							<div class="balance-footer">
+								<button class="balance-footer__transfer">
+									<img src="assets/image/svg/card-send.svg" alt="" />
+									Transfer
+								</button>
+								<button class="balance-footer__receive">
+									<img src="assets/image/svg/card-receive.svg" alt="" />
+									Receive
+								</button>
+							</div>
+						</div>
+						<!-- Catergory -->
+						<div class="catergory card">
+							<div class="category-head card-head">
+								<h2 class="card-title">Expense Catergory</h2>
+								<div class="card-head__right">
+									<div class="card-head__right-text">
+										Monthly
+										<img src="assets/image/svg/arrow-down.svg" alt="" />
+									</div>
+								</div>
+							</div>
+							<canvas id="doughnut" width="210" height="210"></canvas>
+							<ul class="doughnut-labels">
+								<div class="doughnut-labels__wrapper">
+									<ol class="doughnut-labels__subscribed doughnut-labels__item">
+										Subscribed (
+										<span class="doughnut-labels__item-percent">40.1%</span>
+										)
+									</ol>
+									<span class="doughnut-labels__price">$500.000</span>
+								</div>
+								<div class="doughnut-labels__wrapper">
+									<ol class="doughnut-labels__taxs-first doughnut-labels__item">
+										Taxs (
+										<span class="doughnut-labels__item-percent">25%</span>
+										)
+									</ol>
+									<span class="doughnut-labels__price">$1000.000</span>
+								</div>
+								<div class="doughnut-labels__wrapper">
+									<ol class="doughnut-labels__taxs-second doughnut-labels__item">
+										Taxs (
+										<span class="doughnut-labels__item-percent">6.1%</span>
+										)
+									</ol>
+									<span class="doughnut-labels__price">$345.000</span>
+								</div>
+								<div class="doughnut-labels__wrapper">
+									<ol class="doughnut-labels__others doughnut-labels__item">
+										Others (
+										<span class="doughnut-labels__item-percent">19.2%</span>
+										)
+									</ol>
+									<span class="doughnut-labels__price">$234.098</span>
+								</div>
+							</ul>
+						</div>
+					</div>
+
+					<!-- Center -->
+					<div class="card-center">
+						<!-- Analytics -->
+						<div class="analytics card">
+							<div class="income-analysis">
+								<div class="analytics-head card-head">
+									<h2 class="card-title">Income Analysis</h2>
+									<div class="card-head__right">
+										<div class="card-head__right-text">
+											Monthly
+											<img src="assets/image/svg/arrow-down.svg" alt="" />
+										</div>
+									</div>
+								</div>
+								<div class="analytics-main">
+									<div class="analytics-main__content analytics-main__content--green">
+										<div class="analytics-main__content-up">
+											<h1 class="balance-price card-price">$8,527,224</h1>
+											<span class="analytics-main__content-number">
+												<img src="assets/image/svg/arrow-up.svg" alt="" />
+												+3.1%
+											</span>
+										</div>
+										<h4 class="analytics-main__caption">
+											Expense increased by
+											<span class="analytics-main__number">$2.172</span>
+											This Month
+										</h4>
+									</div>
+									<div class="analytics-main__chart">
+										<canvas id="income-analytics" width="200"></canvas>
+									</div>
+								</div>
+							</div>
+
+							<div class="expense-analysis">
+								<div class="analytics-head card-head">
+									<h2 class="card-title">Expense Analysis</h2>
+									<div class="card-head__right">
+										<div class="card-head__right-text">
+											Monthly
+											<img src="assets/image/svg/arrow-down.svg" alt="" />
+										</div>
+									</div>
+								</div>
+								<div class="analytics-main">
+									<div class="analytics-main__content analytics-main__content--red">
+										<div class="analytics-main__content-up">
+											<h1 class="balance-price card-price">$2,056,123</h1>
+											<span class="analytics-main__content-number">
+												<img src="assets/image/svg/arrow-down-red.svg" alt="" />
+												-2.1%
+											</span>
+										</div>
+										<h4 class="analytics-main__caption">
+											Expense increased by
+											<span class="analytics-main__number">$2.172</span>
+											This Month
+										</h4>
+									</div>
+									<div class="analytics-main__chart">
+										<canvas id="expense-analytics" width="200"></canvas>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Plans -->
+						<div class="plans card">
+							<div class="plans-head card-head">
+								<h2 class="card-title">My Pocked Plans</h2>
+								<a href="#" class="card-head__right">
+									See more
+									<img src="assets/image/svg/arrow-right.svg" alt="" />
+								</a>
+							</div>
+							<div class="plans-cards">
+								<div class="plans-card">
+									<span class="plans-card__icon">🚗</span>
+									<h3 class="plans-card__title">New Car</h3>
+									<h5 class="plans-card__price">$5.000,00</h5>
+								</div>
+								<div class="plans-card">
+									<span class="plans-card__icon">🎮</span>
+									<h3 class="plans-card__title">New Console</h3>
+									<h5 class="plans-card__price">$5.000,00</h5>
+								</div>
+								<div class="plans-card">
+									<span class="plans-card__icon">💰</span>
+									<h3 class="plans-card__title">Savings</h3>
+									<h5 class="plans-card__price">$5.000,00</h5>
+								</div>
+								<div class="plans-card">
+									<span class="plans-card__icon">💻</span>
+									<h3 class="plans-card__title">Computer</h3>
+									<h5 class="plans-card__price">$5.000,00</h5>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Right -->
+					<div class="card-right">
+						<!-- Recent -->
+						<div class="recent card">
+							<div class="recent-head card-head">
+								<h2 class="card-title">Recent Activiy</h2>
+								<a href="#" class="card-head__right">
+									See more
+									<img src="assets/image/svg/arrow-right.svg" alt="" />
+								</a>
+							</div>
+							<div class="recent-main">
+								<div class="recent-app">
+									<div class="recent-app__left">
+										<div class="recent-app__img">
+											<img src="assets/image/svg/Figma Pro.svg" alt="" />
+										</div>
+										<div class="recent-app__details">
+											<h3 class="recent-app__name">Figma Pro</h3>
+											<span class="recent-app__status">Subscriptions</span>
+										</div>
+									</div>
+									<div class="recent-app__right">
+										<h3 class="recent-app__price">-$23.21</h3>
+										<span class="recent-app__date">10/02/22 - 15.34</span>
+									</div>
+								</div>
+
+								<div class="recent-app">
+									<div class="recent-app__left">
+										<div class="recent-app__img">
+											<img src="assets/image/svg/Adobe Collection.svg" alt="" />
+										</div>
+										<div class="recent-app__details">
+											<h3 class="recent-app__name">Adobe Collection</h3>
+											<span class="recent-app__status">Subscriptions</span>
+										</div>
+									</div>
+									<div class="recent-app__right">
+										<h3 class="recent-app__price">-$50.21</h3>
+										<span class="recent-app__date">10/02/22 - 15.34</span>
+									</div>
+								</div>
+
+								<div class="recent-app">
+									<div class="recent-app__left">
+										<div class="recent-app__img">
+											<img src="assets/image/svg/Fiver Inter.svg" alt="" />
+										</div>
+										<div class="recent-app__details">
+											<h3 class="recent-app__name">Fiver Inter</h3>
+											<span class="recent-app__status">Receive</span>
+										</div>
+									</div>
+									<div class="recent-app__right">
+										<h3 class="recent-app__price">+$100.00</h3>
+										<span class="recent-app__date">10/02/22 - 15.34</span>
+									</div>
+								</div>
+
+								<div class="recent-app">
+									<div class="recent-app__left">
+										<div class="recent-app__img">
+											<img src="assets/image/svg/Upwork Inter.svg" alt="" />
+										</div>
+										<div class="recent-app__details">
+											<h3 class="recent-app__name">Upwork Inter</h3>
+											<span class="recent-app__status">Receive</span>
+										</div>
+									</div>
+									<div class="recent-app__right">
+										<h3 class="recent-app__price">+$200.00</h3>
+										<span class="recent-app__date">10/02/22 - 15.34</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Currency -->
+						<div class="currency card">
+							<div class="currency-head card-head">
+								<h2 class="card-title">Currency</h2>
+								<div class="currency-head__right card-head__right">
+									<span class="currency-head__right-count">1</span>
+									|
+									<span class="currency-head__right-to">
+										USD
+										<img src="assets/image/svg/arrow-down-black.svg" alt="" />
+									</span>
+								</div>
+							</div>
+
+							<div class="currency-main">
+								<div class="currency-item">
+									<div class="currency-left">
+										<img src="assets/image/svg/rupiah.svg" alt="" />
+										<h3 class="currency-name">Rupiah</h3>
+									</div>
+									<div class="currency-right">
+										<h3 class="currency-price">15425,15</h3>
+										<h3 class="currency-shortname">IDR</h3>
+									</div>
+								</div>
+
+								<div class="currency-item">
+									<div class="currency-left">
+										<img src="assets/image/svg/euro.svg" alt="" />
+										<h3 class="currency-name">Euro</h3>
+									</div>
+									<div class="currency-right">
+										<h3 class="currency-price">0,95</h3>
+										<h3 class="currency-shortname">EUR</h3>
+									</div>
+								</div>
+
+								<div class="currency-item">
+									<div class="currency-left">
+										<img src="assets/image/svg/euro.svg" alt="" />
+										<h3 class="currency-name">Euro</h3>
+									</div>
+									<div class="currency-right">
+										<h3 class="currency-price">0,95</h3>
+										<h3 class="currency-shortname">EUR</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- Transaction -->
+				<section class="transaction section" id="transaction">
+					<div class="transaction-head">
+						<div class="transaction-search">
+							<label class="header-top__label-search btn-border" for="search">
+								<img src="assets/image/svg/search-normal black.svg" alt="" />
+								<input
+									type="text"
+									class="header-top__search"
+									id="search"
+									placeholder="Search for transaction here" />
+							</label>
+						</div>
+						<div class="transaction-head_right">
+							<div class="transaction-filter btn-style btn-border">
+								<img src="assets/image/svg/filter.svg" alt="" />
+								<span class="transaction-filter__text">Filter</span>
+							</div>
+							<div class="transaction-export btn-style btn-border">
+								<img src="assets/image/svg/export.svg" alt="" />
+								<span class="transaction-filter__text">Export</span>
+							</div>
+						</div>
+					</div>
+					<table class="transaction-table">
+						<thead class="transaction-thead">
+							<tr class="transaction-thead__tr transaction-tr">
+								<th class="transaction-table__head transaction-check">
+									<input type="checkbox" id="checkbox-all" />
+								</th>
+								<th class="transaction-table__head transaction-invoice">Invoice</th>
+								<th class="transaction-table__head transaction-name">Name/Business</th>
+								<th class="transaction-table__head transaction-type">Transaction type</th>
+								<th class="transaction-table__head transaction-date">Date</th>
+								<th class="transaction-table__head transaction-amount">Amount</th>
+								<th class="transaction-table__head transaction-status">Status</th>
+								<th class="transaction-table__head transaction-action">Action</th>
+							</tr>
+						</thead>
+						<tbody class="transaction-tbody">
+							<tr class="transaction-tbody__tr transaction-tr">
+								<td class="transaction-table__tbody transaction-tbody__check">
+									<input type="checkbox" />
+								</td>
+								<td class="transaction-table__tbody transaction-tbody__invoice">B12341</td>
+								<td class="transaction-table__tbody transaction-tbody__name">
+									<div class="transaction-tbody__name-wrapper">
+										<div class="transaction-tbody__img">
+											<img src="assets/image/svg/Figma Pro.svg" alt="" />
+										</div>
+										<div class="transaction-tbody__details">
+											<h3 class="transaction-tbody__name-inner">Figma Pro</h3>
+											<span class="transaction-tbody__status">Subscriptions</span>
+										</div>
+									</div>
+								</td>
+								<td class="transaction-table__tbody transaction-tbody__type">Subscribe</td>
+								<td class="transaction-table__tbody transaction-tbody__date">October 20 , 2022</td>
+								<td class="transaction-table__tbody transaction-tbody__amount">-$32.00</td>
+								<td
+									class="transaction-table__tbody transaction-tbody__status transaction-tbody__status--success">
+									<span>Success</span>
+								</td>
+								<td class="transaction-table__tbody transaction-tbody__action">
+									<span>
+										<img src="assets/image/svg/eye.svg" alt="" />
+									</span>
+									<span>
+										<img src="assets/image/svg/trash.svg" alt="" />
+									</span>
+								</td>
+							</tr>
+							<tr class="transaction-tbody__tr transaction-tr">
+								<td class="transaction-table__tbody transaction-tbody__check">
+									<input type="checkbox" />
+								</td>
+								<td class="transaction-table__tbody transaction-tbody__invoice">B12341</td>
+								<td class="transaction-table__tbody transaction-tbody__name">
+									<div class="transaction-tbody__name-wrapper">
+										<div class="transaction-tbody__img">
+											<img src="assets/image/svg/Figma Pro.svg" alt="" />
+										</div>
+										<div class="transaction-tbody__details">
+											<h3 class="transaction-tbody__name-inner">Figma Pro</h3>
+											<span class="transaction-tbody__status">Subscriptions</span>
+										</div>
+									</div>
+								</td>
+								<td class="transaction-table__tbody transaction-tbody__type">Subscribe</td>
+								<td class="transaction-table__tbody transaction-tbody__date">October 20 , 2022</td>
+								<td class="transaction-table__tbody transaction-tbody__amount">-$32.00</td>
+								<td
+									class="transaction-table__tbody transaction-tbody__status transaction-tbody__status--pending">
+									<span>Pending</span>
+								</td>
+								<td class="transaction-table__tbody transaction-tbody__action">
+									<span>
+										<img src="assets/image/svg/eye.svg" alt="" />
+									</span>
+									<span>
+										<img src="assets/image/svg/trash.svg" alt="" />
+									</span>
+								</td>
+							</tr>
+							<tr class="transaction-tbody__tr transaction-tr">
+								<td class="transaction-table__tbody transaction-tbody__check">
+									<input type="checkbox" />
+								</td>
+								<td class="transaction-table__tbody transaction-tbody__invoice">B12341</td>
+								<td class="transaction-table__tbody transaction-tbody__name">
+									<div class="transaction-tbody__name-wrapper">
+										<div class="transaction-tbody__img">
+											<img src="assets/image/svg/Figma Pro.svg" alt="" />
+										</div>
+										<div class="transaction-tbody__details">
+											<h3 class="transaction-tbody__name-inner">Figma Pro</h3>
+											<span class="transaction-tbody__status">Subscriptions</span>
+										</div>
+									</div>
+								</td>
+								<td class="transaction-table__tbody transaction-tbody__type">Subscribe</td>
+								<td class="transaction-table__tbody transaction-tbody__date">October 20 , 2022</td>
+								<td class="transaction-table__tbody transaction-tbody__amount">-$32.00</td>
+								<td
+									class="transaction-table__tbody transaction-tbody__status transaction-tbody__status--cancel">
+									<span>Canceled</span>
+								</td>
+								<td class="transaction-table__tbody transaction-tbody__action">
+									<span>
+										<img src="assets/image/svg/eye.svg" alt="" />
+									</span>
+									<span>
+										<img src="assets/image/svg/trash.svg" alt="" />
+									</span>
+								</td>
+							</tr>
+							<tr class="transaction-tbody__tr transaction-tr">
+								<td class="transaction-table__tbody transaction-tbody__check">
+									<input type="checkbox" />
+								</td>
+								<td class="transaction-table__tbody transaction-tbody__invoice">B12341</td>
+								<td class="transaction-table__tbody transaction-tbody__name">
+									<div class="transaction-tbody__name-wrapper">
+										<div class="transaction-tbody__img">
+											<img src="assets/image/svg/Figma Pro.svg" alt="" />
+										</div>
+										<div class="transaction-tbody__details">
+											<h3 class="transaction-tbody__name-inner">Figma Pro</h3>
+											<span class="transaction-tbody__status">Subscriptions</span>
+										</div>
+									</div>
+								</td>
+								<td class="transaction-table__tbody transaction-tbody__type">Subscribe</td>
+								<td class="transaction-table__tbody transaction-tbody__date">October 20 , 2022</td>
+								<td class="transaction-table__tbody transaction-tbody__amount">-$32.00</td>
+								<td class="transaction-table__tbody transaction-tbody__status">Success</td>
+								<td class="transaction-table__tbody transaction-tbody__action">
+									<span>
+										<img src="assets/image/svg/eye.svg" alt="" />
+									</span>
+									<span>
+										<img src="assets/image/svg/trash.svg" alt="" />
+									</span>
+								</td>
+							</tr>
+							<tr class="transaction-tbody__tr transaction-tr">
+								<td class="transaction-table__tbody transaction-tbody__check">
+									<input type="checkbox" />
+								</td>
+								<td class="transaction-table__tbody transaction-tbody__invoice">B12341</td>
+								<td class="transaction-table__tbody transaction-tbody__name">
+									<div class="transaction-tbody__name-wrapper">
+										<div class="transaction-tbody__img">
+											<img src="assets/image/svg/Figma Pro.svg" alt="" />
+										</div>
+										<div class="transaction-tbody__details">
+											<h3 class="transaction-tbody__name-inner">Figma Pro</h3>
+											<span class="transaction-tbody__status">Subscriptions</span>
+										</div>
+									</div>
+								</td>
+								<td class="transaction-table__tbody transaction-tbody__type">Subscribe</td>
+								<td class="transaction-table__tbody transaction-tbody__date">October 20 , 2022</td>
+								<td class="transaction-table__tbody transaction-tbody__amount">-$32.00</td>
+								<td class="transaction-table__tbody transaction-tbody__status">Success</td>
+								<td class="transaction-table__tbody transaction-tbody__action">
+									<span>
+										<img src="assets/image/svg/eye.svg" alt="" />
+									</span>
+									<span>
+										<img src="assets/image/svg/trash.svg" alt="" />
+									</span>
+								</td>
+							</tr>
+							<tr class="transaction-tbody__tr transaction-tr">
+								<td class="transaction-table__tbody transaction-tbody__check">
+									<input type="checkbox" />
+								</td>
+								<td class="transaction-table__tbody transaction-tbody__invoice">B12341</td>
+								<td class="transaction-table__tbody transaction-tbody__name">
+									<div class="transaction-tbody__name-wrapper">
+										<div class="transaction-tbody__img">
+											<img src="assets/image/svg/Figma Pro.svg" alt="" />
+										</div>
+										<div class="transaction-tbody__details">
+											<h3 class="transaction-tbody__name-inner">Figma Pro</h3>
+											<span class="transaction-tbody__status">Subscriptions</span>
+										</div>
+									</div>
+								</td>
+								<td class="transaction-table__tbody transaction-tbody__type">Subscribe</td>
+								<td class="transaction-table__tbody transaction-tbody__date">October 20 , 2022</td>
+								<td class="transaction-table__tbody transaction-tbody__amount">-$32.00</td>
+								<td class="transaction-table__tbody transaction-tbody__status">Success</td>
+								<td class="transaction-table__tbody transaction-tbody__action">
+									<span>
+										<img src="assets/image/svg/eye.svg" alt="" />
+									</span>
+									<span>
+										<img src="assets/image/svg/trash.svg" alt="" />
+									</span>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+				<!-- Statistics -->
+				<section class="cards section" id="statistics">
+					<!-- Left -->
+					<div class="statistics-left card-left">
+						<div class="statistics-analytics analytics">
+							<div class="statistics__income-analytics income-analysis card">
+								<div class="statistics__analytics-head analytics-head card-head">
+									<h2 class="card-title">Income Analysis</h2>
+								</div>
+								<div class="statistics__analytics-main analytics-main">
+									<div class="analytics-main__content analytics-main__content--green">
+										<div class="transaction__analytics-content analytics-main__content-up">
+											<h1 class="balance-price card-price">$8,527,224</h1>
+											<span class="analytics-main__content-number">
+												<img src="assets/image/svg/arrow-up.svg" alt="" />
+												+3.1%
+											</span>
+										</div>
+									</div>
+									<div class="analytics-main__chart">
+										<canvas id="statistics__income-analytics" width="200"></canvas>
+									</div>
+								</div>
+							</div>
+
+							<div class="statistics__expense-analytics expense-analysis card">
+								<div class="statistics__analytics-head analytics-head card-head">
+									<h2 class="card-title">Expense Analysis</h2>
+								</div>
+								<div class="statistics__analytics-main analytics-main">
+									<div class="analytics-main__content analytics-main__content--red">
+										<div class="transaction__analytics-content analytics-main__content-up">
+											<h1 class="balance-price card-price">$2,056,123</h1>
+											<span class="analytics-main__content-number">
+												<img src="assets/image/svg/arrow-down-red.svg" alt="" />
+												-2.1%
+											</span>
+										</div>
+									</div>
+									<div class="analytics-main__chart">
+										<canvas id="statistics__expense-analytics" width="200"></canvas>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Catergory -->
+						<div class="catergory card">
+							<div class="category-head card-head">
+								<h2 class="card-title">Expense Catergory</h2>
+								<div class="card-head__right">
+									<div class="card-head__right-text">
+										Monthly
+										<img src="assets/image/svg/arrow-down.svg" alt="" />
+									</div>
+								</div>
+							</div>
+							<div class="transaction__category">
+								<canvas id="statistics-doughnut"></canvas>
+								<ul class="doughnut-labels">
+									<div class="doughnut-labels__wrapper">
+										<ol class="doughnut-labels__subscribed doughnut-labels__item">
+											Subscribed (
+											<span class="doughnut-labels__item-percent">40.1%</span>
+											)
+										</ol>
+										<span class="doughnut-labels__price">$500.000</span>
+									</div>
+									<div class="doughnut-labels__wrapper">
+										<ol class="doughnut-labels__taxs-first doughnut-labels__item">
+											Taxs (
+											<span class="doughnut-labels__item-percent">25%</span>
+											)
+										</ol>
+										<span class="doughnut-labels__price">$1000.000</span>
+									</div>
+									<div class="doughnut-labels__wrapper">
+										<ol class="doughnut-labels__taxs-second doughnut-labels__item">
+											Taxs (
+											<span class="doughnut-labels__item-percent">6.1%</span>
+											)
+										</ol>
+										<span class="doughnut-labels__price">$345.000</span>
+									</div>
+									<div class="doughnut-labels__wrapper">
+										<ol class="doughnut-labels__others doughnut-labels__item">
+											Others (
+											<span class="doughnut-labels__item-percent">19.2%</span>
+											)
+										</ol>
+										<span class="doughnut-labels__price">$234.098</span>
+									</div>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<!-- Right -->
+					<div class="card-right">
+						<!-- Balance -->
+						<div class="statistics__balance income-analysis card">
+							<div class="statistics__analytics-head analytics-head card-head">
+								<h2 class="card-title">Balance Statistics</h2>
+								<div class="card-head__right">
+									<div class="card-head__right-text">
+										Monthly
+										<img src="assets/image/svg/arrow-down.svg" alt="" />
+									</div>
+								</div>
+							</div>
+							<canvas id="statistics__balance-chart"></canvas>
+						</div>
+						<!-- Recent -->
+						<div class="statistics__recent recent card">
+							<div class="recent-head card-head">
+								<h2 class="card-title">Recent Activiy</h2>
+								<a href="#" class="card-head__right">
+									See more
+									<img src="assets/image/svg/arrow-right.svg" alt="" />
+								</a>
+							</div>
+							<div class="recent-main">
+								<div class="recent-app">
+									<div class="recent-app__left">
+										<div class="recent-app__img">
+											<img src="assets/image/svg/Figma Pro.svg" alt="" />
+										</div>
+										<div class="recent-app__details">
+											<h3 class="recent-app__name">Figma Pro</h3>
+											<span class="recent-app__status">Subscriptions</span>
+										</div>
+									</div>
+									<div class="recent-app__right">
+										<h3 class="recent-app__price">-$23.21</h3>
+										<span class="recent-app__date">10/02/22 - 15.34</span>
+									</div>
+								</div>
+
+								<div class="recent-app">
+									<div class="recent-app__left">
+										<div class="recent-app__img">
+											<img src="assets/image/svg/Adobe Collection.svg" alt="" />
+										</div>
+										<div class="recent-app__details">
+											<h3 class="recent-app__name">Adobe Collection</h3>
+											<span class="recent-app__status">Subscriptions</span>
+										</div>
+									</div>
+									<div class="recent-app__right">
+										<h3 class="recent-app__price">-$50.21</h3>
+										<span class="recent-app__date">10/02/22 - 15.34</span>
+									</div>
+								</div>
+
+								<div class="recent-app">
+									<div class="recent-app__left">
+										<div class="recent-app__img">
+											<img src="assets/image/svg/Fiver Inter.svg" alt="" />
+										</div>
+										<div class="recent-app__details">
+											<h3 class="recent-app__name">Fiver Inter</h3>
+											<span class="recent-app__status">Receive</span>
+										</div>
+									</div>
+									<div class="recent-app__right">
+										<h3 class="recent-app__price">+$100.00</h3>
+										<span class="recent-app__date">10/02/22 - 15.34</span>
+									</div>
+								</div>
+
+								<div class="recent-app">
+									<div class="recent-app__left">
+										<div class="recent-app__img">
+											<img src="assets/image/svg/Upwork Inter.svg" alt="" />
+										</div>
+										<div class="recent-app__details">
+											<h3 class="recent-app__name">Upwork Inter</h3>
+											<span class="recent-app__status">Receive</span>
+										</div>
+									</div>
+									<div class="recent-app__right">
+										<h3 class="recent-app__price">+$200.00</h3>
+										<span class="recent-app__date">10/02/22 - 15.34</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</main>
+		<!-- Modal -->
+		<div class="modal export">
+			<div class="modal__wrapper"></div>
+			<div class="modal-inner">
+				<div class="modal-close">
+					<img src="assets/image/svg/close-black.svg" alt="" />
+				</div>
+				<h1 class="modal-title">Export Data</h1>
+				<h6 class="modal-subtitle">export data into document form</h6>
+				<div class="form__wrapper modal-input__wrapper">
+					<span class="form__title-input">Choose type of document</span>
+					<div class="dropdown">
+						<div class="dropdown-select">
+							<span class="dropdown-select__text">PDF</span>
+							<img src="assets/image/svg/arrow-down-black.svg" alt="" />
+						</div>
+						<ul class="dropdown__list">
+							<li class="dropdown__item dropdown__item--active">PDF</li>
+							<li class="dropdown__item dropdown__item--active">EXE</li>
+						</ul>
+					</div>
+				</div>
+				<input class="form__submit form-confirm" type="submit" value="Confirm" />
+			</div>
+		</div>
+		<!-- Success Modal -->
+		<div class="modal export">
+			<div class="modal__wrapper"></div>
+			<div class="modal-inner">
+				<div class="modal-inner__icon">
+					<img src="assets/image/svg/tick.svg" alt="" />
+				</div>
+				<h1 class="modal-title">Export Sucessfully</h1>
+				<h6 class="modal-subtitle">Please check your document, and open your document file</h6>
+				<input class="form__submit form-done" type="submit" value="Done" />
+			</div>
+		</div>
+		<!-- Delete Modal -->
+		<div class="modal export">
+			<div class="modal__wrapper"></div>
+			<div class="modal-inner">
+				<div class="modal-inner__icon modal-inner__delete">
+					<img src="assets/image/svg/trash-delete.svg" alt="" />
+				</div>
+				<h1 class="modal-title">Delete Transaction ?</h1>
+				<h6 class="modal-subtitle">Are you sure you want to delete this transaction history?</h6>
+				<div class="modal-action">
+					<span class="form-cancel">Cancel</span>
+					<span class="form-yes">Yes</span>
+				</div>
+			</div>
+		</div>
+
+		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+		<script src="assets/js/vendor/chart.js"></script>
+	</body>
+</html>
